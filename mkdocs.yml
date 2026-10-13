@@ -1,0 +1,9 @@
+site_name: Gestor de tareas
+site_description: Documentación del gestor de tareas en Python
+nav:
+  - Inicio: index.md
+  - Instalación: instalacion.md
+  - Uso: uso.md
+  - Flujo de trabajo: flujo-de-trabajo.md
+theme:
+  name: mkdocs
