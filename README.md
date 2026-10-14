@@ -25,3 +25,7 @@ mkdocs serve
 ```
 
 ## Equipo
+Antonio José (Líder)
+Ana
+Juan
+Juanjo
