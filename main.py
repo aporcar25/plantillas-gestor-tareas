@@ -33,9 +33,14 @@ def main():
                 estado = "x" if t["completada"] else " "
                 print(f"{i}. [{estado}] {t['descripcion']}")
         elif opcion == "3":
-            numero = int(input("Número de tarea: "))
-            eliminar_tarea(numero)
-            print("Tarea eliminada.")
+            try:
+                numero = int(input("Número de tarea: "))
+                eliminar_tarea(numero)
+                print("Tarea eliminada.")
+            except ValueError:
+                print("Error: debes introducir un número.")
+            except IndexError:
+                print("Error: no existe ninguna tarea con ese número.")
         elif opcion == "4":
             numero = int(input("Número de tarea: "))
             completar_tarea(numero)
