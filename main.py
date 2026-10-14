@@ -1,4 +1,4 @@
-from tareas import anadir_tarea, listar_tareas, eliminar_tarea
+from tareas import anadir_tarea, listar_tareas, eliminar_tarea, completar_tarea
 
 
 def mostrar_menu():
@@ -6,7 +6,8 @@ def mostrar_menu():
     print("1. Añadir tarea")
     print("2. Ver tareas")
     print("3. Eliminar tarea")
-    print("4. Salir")
+    print("4. Marcar tarea como completada")
+    print("5. Salir")
 
 
 def main():
@@ -41,6 +42,10 @@ def main():
             except IndexError:
                 print("Error: no existe ninguna tarea con ese número.")
         elif opcion == "4":
+            numero = int(input("Número de tarea: "))
+            completar_tarea(numero)
+            print("Tarea marcada como completada.")
+        elif opcion == "5":
             break
         else:
             print("Opción no válida.")
