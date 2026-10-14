@@ -15,9 +15,15 @@ def main():
         opcion = input("Elige una opción: ")
 
         if opcion == "1":
-            descripcion = input("Descripción: ")
-            anadir_tarea(descripcion)
-            print("Tarea añadida.")
+            descripcion = input("Descripción: ").strip()
+
+            if not descripcion:
+                print("La tarea no puede estar vacía.")
+            else:
+                anadir_tarea(descripcion)
+                print("Tarea añadida.")
+
+
         elif opcion == "2":
             tareas = listar_tareas()
             if not tareas:
