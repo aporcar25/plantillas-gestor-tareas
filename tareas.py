@@ -11,3 +11,6 @@ def listar_tareas():
 
 def eliminar_tarea(indice):
     tareas.pop(indice - 1)
+
+def completar_tarea(indice):
+    tareas[indice - 1]["completada"] = True
