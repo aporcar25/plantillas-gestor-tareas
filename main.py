@@ -1,4 +1,4 @@
-from tareas import anadir_tarea, listar_tareas, eliminar_tarea, completar_tarea
+from tareas import anadir_tarea, listar_tareas, eliminar_tarea, completar_tarea, guardar_tareas, cargar_tareas
 
 
 def mostrar_menu():
@@ -11,6 +11,7 @@ def mostrar_menu():
 
 
 def main():
+    cargar_tareas()
     while True:
         mostrar_menu()
         opcion = input("Elige una opción: ")
@@ -46,6 +47,7 @@ def main():
             completar_tarea(numero)
             print("Tarea marcada como completada.")
         elif opcion == "5":
+            guardar_tareas()
             break
         else:
             print("Opción no válida.")

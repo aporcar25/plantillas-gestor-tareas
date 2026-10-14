@@ -19,3 +19,7 @@ Tarea añadida.
 | 2 | Muestra todas las tareas |
 | 3 | Elimina una tarea por su número |
 | 4 | Sale del programa |
+
+# Guardado de tareas
+Las tareas se guardan automáticamente en el archivo `tareas.json` al salir del
+programa y se cargan al iniciarlo. Este archivo no se sube al repositorio.
